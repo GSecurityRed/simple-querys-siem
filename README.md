@@ -30,3 +30,5 @@ file.name: "runas.exe"
 
 message: "applications3"
 
+file.name : *bypass*
+
