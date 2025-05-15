@@ -32,3 +32,5 @@ message: "applications3"
 
 file.name : *bypass*
 
+event.action: "Discovery"
+
