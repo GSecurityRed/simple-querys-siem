@@ -34,3 +34,5 @@ file.name : *bypass*
 
 event.action: "Discovery"
 
+message: "MRE Alerta"
+
