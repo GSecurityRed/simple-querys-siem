@@ -36,3 +36,9 @@ event.action: "Discovery"
 
 message: "MRE Alerta"
 
+winlog.event_id: 4722 -> Indica que uma conta de usuário foi habilitada (ou “ativada”) no Active Directory ou no SAM local.
+
+winlog.event_id: 4723 -> Quando um usuário autenticado solicita a alteração da própria senha
+
+winlog.event_id: 4738  -> Este evento é gerado sempre que qualquer atributo de uma conta de usuário é alterado (exceto senha).
+
