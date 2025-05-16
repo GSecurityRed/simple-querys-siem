@@ -24,6 +24,8 @@ auditd.log.proctitle: "whoami" OR process.args: "whoami" OR process.executable: 
 
 RunAsInvoker
 
+event.action: "Malware"
+
 process.name: "runas.exe"
 
 file.name: "runas.exe"
