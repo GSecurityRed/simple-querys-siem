@@ -18,7 +18,7 @@ message: "backdoor: Mirai.Botnet"
 
 event.action: "CommandAndControl"
 
-"curl" OR "wget" OR "netcat"
+"curl" OR "wget" OR "netcat"   *curl* or *wget* or *netcat*
 
 auditd.log.proctitle: "whoami" OR process.args: "whoami" OR process.executable: "whoami" OR process.command_line: "whoami" OR file.name: "whoami.exe"
 
