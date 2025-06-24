@@ -6,6 +6,8 @@ Coleção de **consultas simples** para hunting em SIEM.
 ```kql
 error.message: "whoami" OR error.message: "curl"
 
+"wmic.exe" and (*.command_line:create or *.command_line:node or *.command_line:processor or *.command_line:call )
+
 event.action: "SuspiciousActivity"
 
 event.action: "DLPRuleMatch"
