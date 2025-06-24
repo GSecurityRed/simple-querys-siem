@@ -48,3 +48,6 @@ winlog.event_id: 4723 -> Quando um usuário autenticado solicita a alteração d
 
 winlog.event_id: 4738  -> Este evento é gerado sempre que qualquer atributo de uma conta de usuário é alterado (exceto senha).
 
+(process.name:*psexec* OR process.name:*PsExec* OR process.name:*psExec* OR process.name:*Psexec* OR process.command_line:*psexec* OR process.command_line:*PSEXESVC* OR winlog.event_data.Image:*psexec* OR winlog.event_data.ServiceName:*PSEXESVC* OR winlog.event_data.ImageLoaded:*psexec* OR winlog.event_data.CommandLine.keyword:*psexec*) or (event.code:5145 AND (winlog.event_data.RelativeTargetName:*stdin* OR winlog.event_data.RelativeTargetName:*psexexsvc* OR winlog.event_data.RelativeTargetName:*PSEXESVC*))
+
+agent.name: exists and winlog.event_data.LogonType: 10 and winlog.event_data.TargetUserName: exists and source.ip: exists -> rdp
