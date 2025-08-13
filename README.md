@@ -38,6 +38,8 @@ message: "applications3"
 
 file.name : *bypass*
 
+event.action : "scheduled-task-created" 
+
 event.action: "Discovery"
 
 message: "MRE Alerta"
