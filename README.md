@@ -38,7 +38,10 @@ message: "applications3"
 
 file.name : *bypass*
 
-event.action : "scheduled-task-created" 
+event.action : "scheduled-task-created"
+
+powershell.file.script_block_text
+
 
 event.action: "Discovery"
 
