@@ -6,7 +6,9 @@ Coleção de **consultas simples** para hunting em SIEM.
 ```kql
 error.message: "whoami" OR error.message: "curl"
 
-event.action: "Execute a Remote Command" 
+event.action: "Execute a Remote Command"
+
+winlog.event_data.TaskContent
 
 rule.category: "Pornography"
 
