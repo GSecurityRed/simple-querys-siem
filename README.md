@@ -5,6 +5,8 @@ Coleção de **consultas simples** para hunting em SIEM.
 
 ```kql
 
+event.code:15 -> (FileCreateStreamHash), que representa um evento de download de arquivo do navegador.
+
 winlog.event_data.param20: "wget"
 
 event.action: "Web Event"
