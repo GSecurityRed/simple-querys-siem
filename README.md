@@ -5,6 +5,8 @@ Coleção de **consultas simples** para hunting em SIEM.
 
 ```kql
 
+ips QUERY siem
+
 message: "SSL tunnel established"
 
 *vpn* and
