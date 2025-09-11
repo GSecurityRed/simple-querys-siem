@@ -63,6 +63,7 @@ event.action : "scheduled-task-created"
 
 powershell.file.script_block_text
 
+event.code: 4702 -> Shendule task 
 
 event.action: "Discovery"
 
